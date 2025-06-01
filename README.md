@@ -1,1 +1,2 @@
 # Plantspedia_website
+This Website helps anyone design a personalized garden with ease. From plant recommendations tailored to your space and style to design tools, it makes garden planning simple and inspiring. 
