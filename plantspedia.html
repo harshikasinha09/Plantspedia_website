@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plantspedia3</title>
+  <title>Plantspedia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   <style>
+    .garden-section {
+  background-color: #d8f5d6;
+}
+.garden-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+.garden-feature {
+  padding: 10px 20px;
+}
+.icon-circle {
+  background-color: rgb(0, 144, 0);
+  color: beige;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle a {
+  color: inherit;
+}
+.feature-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #2d2d2d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.feature-desc {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+.icon-circle:hover{
+  color: #013f18;
+  background-color:#a3e59d;
+}
+
+
    body {
       overflow-x: hidden;
       font-family: 'Segoe UI', sans-serif;
@@ -118,6 +165,7 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 20px;
+  
     }
     .equal-img-wrapper {
       aspect-ratio: 16/9;
@@ -184,35 +232,46 @@
       background-color: rgb(0, 144, 0);
     }
 
+    
+.hovereffect {
+position:relative;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hovereffect:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 </style>
 </head>
 <body>
 
-
   <!--Navbar-->
 <nav class="navbar navbar-expand-lg p-0">
   <div class="container-fluid" style="background-color:#013f18;">
-    <img src="./assets/logo.png"  width="8%" alt="Plantspedia Logo">
+    <img src="./assets/logo3-removebg-preview.png" class="p-1"  width="8%" alt="Plantspedia Logo">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#" style="color: beige;">Home</a>
         </li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#Categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#Categories" role="button" data-bs-toggle="dropdown" >
             Categories
           </a>
-        <li class="nav-item">
-          <a class="nav-link" href="#guidance">Guidance</a>
-        </li>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#Categories">Indoor plants</a></li>
             <li><a class="dropdown-item" href="#Outdoor">Outdoor plants</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#Aquatic">Aquatic plants</a></li>
           </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#guidance">Guidance</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section">About</a>
@@ -224,7 +283,6 @@
     </div>
   </div>
 </nav>
-
 
 
 <!--Carousel-->
@@ -240,7 +298,7 @@
         <img src="./assets/carousal2.jpg" class=" w-100 img-fluid carousel-img" alt="Ornamental plants at home">
         <div class="overlay-text">
           <h4 style="color:rgb(156, 224, 156)">Welcome to Plantspedia</h4>
-      <h1 style="max-width: 600px;">Discover, Learn, and Grow – Your Ultimate Plant Guide!</h1>
+      <h1 style="max-width: 600px; font-family:Georgia, 'Times New Roman', Times, serif">Discover, Learn, and Grow – Your Ultimate Plant Guide!</h1>
       <p style="max-width: 800px;">Are you a plant lover looking to expand your green knowledge or a curious beginner ready to dig into the joys of gardening?
          You’ve come to the right place at <strong>Plantspedia</strong>, where we’re passionate about everything green. 
          From detailed plant profiles to practical planting tips, our platform is designed to empower and inspire every plant enthusiast.</p>
@@ -273,8 +331,6 @@
 </div>
 
 
-
-
 <!--About-->
 <div class="row mt-5" id="section">
   <div class="container ">
@@ -296,82 +352,94 @@
     </div>
   </div>
   <br>
-  <div class="row mt-5">
-    <h1 class="text-center pt-2" style="text-decoration: underline; color:#013f18">Explore Nature’s Wonders</h1>
-  <div class="col-sm-6 p-5">
+
+<!-- Explore Section -->
+<div class="container mt-5">
+  <h1 class="text-center pt-2" style="text-decoration: underline; color:#013f18">Explore Nature’s Wonders</h1>
+  <div class="owl-carousel explore-carousel pt-4">
     <div class="equal-img-wrapper" style="border-radius: 10px;">
-      <img src="./assets/db8f40917a.jpeg" alt="Flowering plants">
+      <img class="img-responsive" src="./assets/db8f40917a.jpeg">
     </div>
-  </div>
-  <div class="col-sm-6 p-5">
     <div class="equal-img-wrapper" style="border-radius: 10px;">
-      <img src="./assets/desk-plants-700523.jpeg" alt="Desk plants">
+      <img class="img-responsive" src="./assets/desk-plants-700523.jpeg">
     </div>
-  </div>
+    <div class="equal-img-wrapper" style="border-radius: 10px;">
+      <img class="img-responsive" src="./assets/plants1.jpg">
+    </div>
+    <div class="equal-img-wrapper" style="border-radius: 10px;">
+      <img class="img-responsive" src="./assets/plants4.jpg">
+    </div>
+    <div class="equal-img-wrapper" style="border-radius: 10px;">
+      <img class="img-responsive" src="./assets/plants3.jpg">
+    </div>
   </div>
 </div>
-
+</div>
+<br>
 
 
 <!--categories-->
 <div class="container mt-5" id="Categories">
-    <h1 class="text-center">Categories</h1>
+    <h1 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">Categories</h1>
     <div class="row g-2">
       <div class="col-md-4 p-3" id="Categories">
-        <div class="card h-100">
-          <img src="./assets/collection-of-beautiful-houseplants-on-wooden-table-royalty-free-image-1712685460.jpg" class="card-img-top" alt="Indoor Plants">
+        <div class="card h-100 hovereffect">
+          <img src="./assets/collection-of-beautiful-houseplants-on-wooden-table-royalty-free-image-1712685460.jpg" class="card-img-top img-responsive" alt="Indoor Plants">
+          <div class="overlay ">
+           
+        </div>
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e">Indoor Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Indoor Plants</h3>
             <p>Perfect for enhancing your indoor spaces with nature's touch.</p>
             <a href="#" class="btn">View Details</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 p-3" id="Outdoor">
-        <div class="card h-100">
+        <div class="card h-100 hovereffect">
           <img src="./assets/outdoorp2.jpg" class="card-img-top" alt="Outdoor Plants">
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e">Outdoor Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Outdoor Plants</h3>
             <p>Beautiful outdoor selections to transform your garden or balcony.</p>
             <a href="#" class="btn">View Details</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="card h-100">
+        <div class="card h-100 hovereffect">
           <img src="./assets/seasonalp.jpg" class="card-img-top" alt="Seasonal Plants">
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e">Seasonal Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Seasonal Plants</h3>
             <p>Plants that thrive with the changing seasons for year-round beauty.</p>
             <a href="#" class="btn">View Details</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="card h-100">
+        <div class="card h-100 hovereffect">
           <img src="./assets/ornamental-plants-at-home (1).jpg" class="card-img-top" alt="Ornamental Plants">
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e">Ornamental Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Ornamental Plants</h3>
             <p>Eye-catching varieties to elevate your space with style.</p>
             <a href="#" class="btn">View Details</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="card h-100">
+        <div class="card h-100 hovereffect">
           <img src="./assets/aquaticp.jpeg" class="card-img-top" alt="Aquatic Plants" id="Aquatic">
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e;">Aquatic Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e;">Aquatic Plants</h3>
             <p>Graceful aquatic plants to enrich your pond or water feature.</p>
             <a href="#" class="btn">View Details</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="card h-100">
+        <div class="card h-100 hovereffect">
           <img src="https://www.gardenersdream.co.uk/cdn/shop/articles/colorful-cottage-garden-with-porch-and-adirondack-chairs_68590be5-b88c-411b-aeb1-9f1ecd4fd28e.jpg?v=1739536326&width=1070" class="card-img-top" alt="Evergreen Plants">
           <div class="card-body text-center">
-            <h3 class="card-title" style="color: #2b602e;">Evergreen Plants</h3>
+            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e;">Evergreen Plants</h3>
             <p>Stunning greenery that remains vibrant year-round.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -486,9 +554,47 @@
     </div>
   </div>
 </div>
-
-
 <br><br>
+
+<!--Plants section-->
+<div class="container-fluid garden-section py-5 mb-5">
+  <div class="container text-center">
+    <h2 class="garden-title mb-5" style="font-family: Georgia, 'Times New Roman', Times, serif;">Create the garden you’ve always wanted</h2>
+    <div class="row justify-content-center">
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="garden-feature">
+          <div class="icon-circle mb-3">
+            <a href="#"><i class="fa-solid fa-lightbulb fa-2x"></i></a>
+          </div>
+          <h5 class="feature-title">Get garden design ideas</h5>
+          <p class="feature-desc">Find your perfect garden</p>
+        </div>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="garden-feature">
+          <div class="icon-circle mb-3">
+            <a href="#"><i class="fa-solid fa-seedling fa-2x"></i></a>
+          </div>
+          <h5 class="feature-title">Find the plants that work<br>for you</h5>
+          <p class="feature-desc">Ideas for seasons and regions</p>
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="garden-feature">
+          <div class="icon-circle mb-3">
+            <a href="#"></a><i class="fa-solid fa-trowel fa-2x"></i></a>
+          </div>
+          <h5 class="feature-title">Design your garden</h5>
+          <p class="feature-desc">Use our interactive tools<br>to design your dream garden</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Footer-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
@@ -504,6 +610,7 @@
                     <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-icon" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
                     <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="youtube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -556,6 +663,29 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <script>
+  $(document).ready(function(){
+    $(".explore-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  });
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>
