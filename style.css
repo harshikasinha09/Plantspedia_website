@@ -40,16 +40,20 @@
   background-color:#a3e59d;
 }
 
+.dropdown-item:hover{
+    background-color: #d1f0ff;
+}
+
 
    body {
       overflow-x: hidden;
       font-family: 'Segoe UI', sans-serif;
     }
     .nav-link{
-      color: beige;
+      color: beige !important;
     }
     .nav-link:hover{
-      color:grey;
+      color:rgb(17, 17, 17) !important;
     }
     
   .container1 {
@@ -87,13 +91,13 @@
   height: 100%;
   object-fit: cover;
   }
-  .overlay-text {
+.overlay-text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.482); 
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   flex-direction: column;
@@ -101,7 +105,42 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Text scales responsively from 266px to large screens */
+.overlay-text h1 {
+  font-size: clamp(1rem, 5vw, 2.5rem);   /* 16px → 40px */
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  max-width: 95%;
+}
+
+.overlay-text h4 {
+  font-size: clamp(0.9rem, 3.5vw, 1.5rem); /* 14.4px → 24px */
+  margin-bottom: 0.5rem;
+  color: rgb(156, 224, 156);
+}
+
+.overlay-text p {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem); /* 12.8px → 19.2px */
+  line-height: 1.6;
+  max-width: 95%;
+}
+
+/* Optional: on very small screens, shift content up */
+@media (max-width: 576px) {
+  .overlay-text {
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
+}
+
+
 
     .about-img {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -230,3 +269,18 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+.section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      background: #e5fbe5;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .section:nth-child(even) {
+      background: #d1f0ff;
+    }

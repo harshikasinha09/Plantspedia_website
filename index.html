@@ -8,27 +8,38 @@
   <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
   <title>Plantspedia- your personalized guide to an Enchanting garden</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
 
-  <!--Navbar-->
-<nav class="navbar navbar-expand-lg p-0">
-  <div class="container-fluid" style="background-color:#013f18;">
-    <img src="./assets/logo3-removebg-preview.png" class="p-1"  width="8%" alt="Plantspedia Logo">
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark p-0" style="background-color: #013f18;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo3-removebg-preview.png"  width="80" alt="Plantspedia Logo">
+    </a>
 
+    <!-- Toggler-->
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: beige;">Home</a>
+          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#Categories" role="button" data-bs-toggle="dropdown" >
+          <a class="nav-link dropdown-toggle text-light" href="#Categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
           <ul class="dropdown-menu">
@@ -40,18 +51,19 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#guidance">Guidance</a>
+          <a class="nav-link text-light" href="#guidance">Guidance</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section">About</a>
+          <a class="nav-link text-light" href="#section">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
+          <a class="nav-link text-light" href="#Contact">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 
 <!--Carousel-->
@@ -64,15 +76,18 @@
     </div>
     <div class="carousel-inner hero-carousel">
       <div class="carousel-item slide active">
-        <img src="./assets/carousal2.jpg" class=" w-100 img-fluid carousel-img" alt="Ornamental plants at home">
-        <div class="overlay-text">
-          <h4 style="color:rgb(156, 224, 156)">Welcome to Plantspedia</h4>
-      <h1 style="max-width: 600px; font-family:Georgia, 'Times New Roman', Times, serif">Discover, Learn, and Grow – Your Ultimate Plant Guide!</h1>
-      <p style="max-width: 800px;">Are you a plant lover looking to expand your green knowledge or a curious beginner ready to dig into the joys of gardening?
-         You’ve come to the right place at <strong>Plantspedia</strong>, where we’re passionate about everything green. 
-         From detailed plant profiles to practical planting tips, our platform is designed to empower and inspire every plant enthusiast.</p>
-    </div>
-      </div>
+  <img src="./assets/carousal2.jpg" class="w-100 img-fluid carousel-img" alt="Ornamental plants at home">
+  <div class="overlay-text">
+    <h4>Welcome to Plantspedia</h4>
+    <h1>Discover, Learn, and Grow – Your Ultimate Plant Guide!</h1>
+    <p>
+      Are you a plant lover looking to expand your green knowledge or a curious beginner ready to dig into the joys of gardening?
+      You’ve come to the right place at <strong>Plantspedia</strong>, where we’re passionate about everything green.
+      From detailed plant profiles to practical planting tips, our platform is designed to empower and inspire every plant enthusiast.
+    </p>
+  </div>
+</div>
+
       <div class="carousel-item">
         <img src="./assets/gardenfeversmall-3.jpg" class=" w-100 img-fluid carousel-img" alt="Garden fever">
         <div class="carousel-caption d-none d-md-block">
@@ -114,10 +129,11 @@
             With Plantpedia, the possibilities are endless!</p>
       </div>
       <div class="col-sm-6 px-0">
-        <div class="equal-img-wrapper">
-          <img src="./assets/plantstand.jpg" alt="Plant stand with various plants">
-        </div>
-      </div>
+  <div class="equal-img-wrapper">
+    <img src="./assets/plantstand.jpg" alt="Plant stand with various plants" class="img-fluid w-100">
+  </div>
+</div>
+
     </div>
   </div>
   <br>
@@ -158,7 +174,7 @@
            
         </div>
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Indoor Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">Indoor Plants</h3>
             <p>Perfect for enhancing your indoor spaces with nature's touch.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -168,7 +184,7 @@
         <div class="card h-100 hovereffect">
           <img src="./assets/outdoorp2.jpg" class="card-img-top" alt="Outdoor Plants">
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Outdoor Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">Outdoor Plants</h3>
             <p>Beautiful outdoor selections to transform your garden or balcony.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -178,7 +194,7 @@
         <div class="card h-100 hovereffect">
           <img src="./assets/seasonalp.jpg" class="card-img-top" alt="Seasonal Plants">
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Seasonal Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">Seasonal Plants</h3>
             <p>Plants that thrive with the changing seasons for year-round beauty.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -188,7 +204,7 @@
         <div class="card h-100 hovereffect">
           <img src="./assets/ornamental-plants-at-home (1).jpg" class="card-img-top" alt="Ornamental Plants">
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e">Ornamental Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">Ornamental Plants</h3>
             <p>Eye-catching varieties to elevate your space with style.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -198,7 +214,7 @@
         <div class="card h-100 hovereffect">
           <img src="./assets/aquaticp.jpeg" class="card-img-top" alt="Aquatic Plants" id="Aquatic">
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e;">Aquatic Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">Aquatic Plants</h3>
             <p>Graceful aquatic plants to enrich your pond or water feature.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -208,7 +224,7 @@
         <div class="card h-100 hovereffect">
           <img src="https://www.gardenersdream.co.uk/cdn/shop/articles/colorful-cottage-garden-with-porch-and-adirondack-chairs_68590be5-b88c-411b-aeb1-9f1ecd4fd28e.jpg?v=1739536326&width=1070" class="card-img-top" alt="Evergreen Plants">
           <div class="card-body text-center">
-            <h3 class="card-title animate__animated animate__slideInDown" style="color: #2b602e;">Evergreen Plants</h3>
+            <h3 class="card-title" data-aos="fade-up" style="color: #2b602e;">evergreen Plants</h3>
             <p>Stunning greenery that remains vibrant year-round.</p>
             <a href="#" class="btn">View Details</a>
           </div>
@@ -289,40 +305,48 @@
 </div>
 
 
-<!--insights-->
+<!-- Seasonal Gardening Insights -->
 <div class="container-fluid p-5">
   <div class="row">
-    <div class="col-6">
-      <img src="./assets/seasonal4.jpg" alt="Plant stand with plants" class="w-100 about-img">
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <img src="./assets/seasonal4.jpg" alt="Plant stand with plants" class="w-100 about-img rounded">
     </div>
-    <div class="col-6 d-flex flex-column justify-content-center align-items-center text-center ">
-      <h1>🌸 Seasonal Gardening Insights<hr></h1><br>
-          Gardening isn’t just a one-time activity—it’s a journey that evolves with the seasons. Our seasonal gardening guides provide expert advice for:
-          Spring Planting: Make the most of the growing season with flowers, veggies, and fresh greenery.
-          Summer Care: Learn how to protect your plants from heat and make your garden thrive in warmer months.
-          Autumn Preparations: Harvest the fruits of your labor and prepare your garden for cooler weather.
-          Winter Tips: Discover how to care for indoor plants and create a cozy winter garden.
-          With PlantsInfo, you can keep your garden thriving all year round!
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-md-start">
+      <h1>🌸 Seasonal Gardening Insights<hr></h1>
+      <p>
+        Gardening isn’t just a one-time activity—it’s a journey that evolves with the seasons. Our seasonal gardening guides provide expert advice for:
+        <br><strong>Spring Planting:</strong> Make the most of the growing season with flowers, veggies, and fresh greenery.
+        <br><strong>Summer Care:</strong> Learn how to protect your plants from heat and make your garden thrive in warmer months.
+        <br><strong>Autumn Preparations:</strong> Harvest the fruits of your labor and prepare your garden for cooler weather.
+        <br><strong>Winter Tips:</strong> Discover how to care for indoor plants and create a cozy winter garden.
+        <br>With PlantsInfo, you can keep your garden thriving all year round!
+      </p>
     </div>
   </div>
 </div>
 
+<!-- Sustainability Starts in the Soil -->
 <div class="container-fluid p-5">
   <div class="row">
-    <div class="col-6 d-flex flex-column justify-content-center align-items-left text-left">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-md-start mb-4 mb-md-0">
       <h1>🌻 Sustainability Starts in the Soil<hr></h1>
-      <p>At PlantsInfo, we believe in creating a sustainable environment through mindful gardening. Our platform encourages eco-friendly practices like:
-      <br><strong>Organic Compost:</strong> Learn how to make your compost at home using kitchen and garden waste.
-      <br><strong>Water Conservation:</strong> Discover efficient watering techniques such as drip irrigation and mulching.
-      <br><strong>Plant Gardening:</strong> Understand the importance of native plants in preserving biodiversity and attracting local wildlife.
-          Pollinator-Friendly Gardens: Create spaces that support bees, butterflies, and birds.
-          By adopting these practices, you not only grow healthier plants but also contribute to a healthier planet.</p>
+      <p>
+        At PlantsInfo, we believe in creating a sustainable environment through mindful gardening. Our platform encourages eco-friendly practices like:
+        <br><strong>Organic Compost:</strong> Learn how to make your compost at home using kitchen and garden waste.
+        <br><strong>Water Conservation:</strong> Discover efficient watering techniques such as drip irrigation and mulching.
+        <br><strong>Plant Gardening:</strong> Understand the importance of native plants in preserving biodiversity and attracting local wildlife.
+        <br><strong>Pollinator-Friendly Gardens:</strong> Create spaces that support bees, butterflies, and birds.
+        <br>By adopting these practices, you not only grow healthier plants but also contribute to a healthier planet.
+      </p>
     </div>
-    <div class="col-6">
-      <img src="./assets/gardening2.jpg" alt="Carousel image with plants" class="w-100 about-img">
+    <div class="col-12 col-md-6">
+      <img src="./assets/gardening2.jpg" alt="Carousel image with plants" class="w-100 about-img rounded">
     </div>
   </div>
 </div>
+
+
+
 <br><br>
 
 <!--Plants section-->
@@ -363,6 +387,8 @@
     </div>
   </div>
 </div>
+
+
 
 <!--Footer-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
@@ -432,6 +458,8 @@
     </div>
 </footer>
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     
     <script>
@@ -442,7 +470,7 @@
       nav: true,
       dots: true,
       autoplay: true,
-      autoplayTimeout: 3000,
+      autoplayTimeout: 2500,
       responsive: {
         0: { items: 1 },
         576: { items: 1 },
@@ -453,8 +481,17 @@
   });
 </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,
+  });
+</script>
+  
+  
   </body>
 </html>
