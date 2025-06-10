@@ -309,6 +309,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     .whatsapp-float:hover{
 
       color: beige;
-      background-color: #077212;
+      background-color: #077a13;
       text-decoration: none;
     }
