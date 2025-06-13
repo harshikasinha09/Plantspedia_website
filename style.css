@@ -137,9 +137,6 @@
     padding-bottom: 15px;
   }
 }
-
-
-
     .about-img {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       display: block;
@@ -187,7 +184,7 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       margin-bottom: 20px;
   
